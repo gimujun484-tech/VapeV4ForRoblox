@@ -1,7 +1,7 @@
 repeat task.wait() until game:IsLoaded()
 if shared.vape then shared.vape:Uninject() end
 
-local vape
+local pinghyu
 local loadstring = function(...)
 	local res, err = loadstring(...)
 	if err and vape then
