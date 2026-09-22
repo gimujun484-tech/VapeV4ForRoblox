@@ -34,13 +34,13 @@ local function wipeFolder(path)
 	end
 end
 
-for _, folder in {'newvape', 'newvape/games', 'newvape/profiles', 'newvape/assets', 'newvape/libraries', 'newvape/guis'} do
+for _, folder in {'newpinghyu', 'newpinghyu/games', 'newpinghyu/profiles', 'newpinghyu/assets', 'newpinghyu/libraries', 'newpinghyu/guis'} do
 	if not isfolder(folder) then
 		makefolder(folder)
 	end
 end
 
-if not shared.VapeDeveloper then
+if not shared.vapeDeveloper then
 	local _, subbed = pcall(function()
 		return game:HttpGet('https://github.com/7GrandDadPGN/VapeCompiled')
 	end)
