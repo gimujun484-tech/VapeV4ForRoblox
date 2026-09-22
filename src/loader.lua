@@ -57,11 +57,11 @@ if not shared.vapeDeveloper then
 		wipeFolder('newpinghyu/libraries')
 	end
 
-	if (isfile('newvape/profiles/asset.txt') and readfile('newvape/profiles/asset.txt') or '') ~= assetVer then
+	if (isfile('newpignyhu/profiles/asset.txt') and readfile('newpinghyu/profiles/asset.txt') or '') ~= assetVer then
 		wipeFolder('newpinghyu/assets')
 	end
 
-	writefile('newvape/profiles/asset.txt', assetVer)
+	writefile('newpinghyu/profiles/asset.txt', assetVer)
 	writefile('newpinghyu/profiles/commit.txt', commit)
 end
 
